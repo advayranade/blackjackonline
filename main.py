@@ -18,8 +18,7 @@ while playing:
   pause(2)
   shuffle = random.shuffle(cards)
   print("Before we give you your cards, please bet!")
-  bet = input(
-      f"You have ${total_money} right now. How much would you like to bet? ")
+  bet = input(f"You have ${total_money} right now. How much would you like to bet? ")
   print(Style.RESET_ALL)
   while int(bet) > int(total_money):
     print("Your bet exceeded the maximum amount. Please bet again. ")
